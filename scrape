@@ -1,0 +1,6 @@
+from lxml import html
+import requests
+page = requests.get('http://rozetka.com.ua/notebooks/c80004/filter/page=1;preset=game;sort=expensive/')
+tree = html.fromstring(page.content)
+<div title="buyer-name">Carson Busses</div>
+<div class="div class="g-price-uah"">$29.95</span>
